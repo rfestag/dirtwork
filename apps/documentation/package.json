@@ -1,0 +1,63 @@
+{
+  "name": "@dirtwork/documentation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "eslint && cross-env NODE_ENV=test jest --passWithNoTests",
+    "build": "next build",
+    "lint": "eslint --fix",
+    "preinstall": "npx only-allow pnpm",
+    "prettier": "prettier --write src",
+    "start": "next start",
+    "dev": "next dev"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@material-ui/core": "^4.11.3",
+    "@material-ui/icons": "^4.11.2",
+    "@material-ui/lab": "^4.0.0-alpha.57",
+    "fontsource-roboto": "^4.0.0",
+    "next": "^10.0.6",
+    "next-mdx-enhanced": "^5.0.0",
+    "next-plugin-custom-babel-config": "^1.0.4",
+    "next-transpile-modules": "^6.2.0",
+    "remark-frontmatter": "^3.0.0"
+  },
+  "private": true,
+  "publishConfig": {
+    "bin": "",
+    "main": "lib/index.js"
+  },
+  "jest": {
+    "bail": true,
+    "collectCoverage": true,
+    "coverageReporters": [
+      "json",
+      "lcov",
+      "text",
+      "clover"
+    ],
+    "transform": {
+      "\\.js?$": [
+        "babel-jest",
+        {
+          "rootMode": "upward"
+        }
+      ]
+    }
+  },
+  "lint-staged": {
+    "src/**/*.{js,jsx}": [
+      "eslint --fix",
+      "prettier --write",
+      "cross-env NODE_ENV=test jest --bail --findRelatedTests --passWithNoTests"
+    ],
+    "src/**/*.{md,mdx}": [
+      "eslint --parser eslint-mdx --plugin mdx --fix",
+      "prettier --parser mdx --write"
+    ]
+  }
+}
