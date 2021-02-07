@@ -74,6 +74,16 @@ importers:
       react-dom: ^17.0.1
       rollup: ^2.38.5
       rollup-plugin-peer-deps-external: ^2.2.4
+  packages/react-livedoc:
+    dependencies:
+      prop-types: 15.7.2
+    devDependencies:
+      react: 17.0.1
+      react-dom: 17.0.1_react@17.0.1
+    specifiers:
+      prop-types: ^15.7.2
+      react: ^17.0.1
+      react-dom: ^17.0.1
 lockfileVersion: 5.2
 packages:
   /@babel/code-frame/7.12.13:
@@ -5217,7 +5227,6 @@ packages:
     resolution:
       integrity: sha512-lGS5PXGAzR4RF7V5+XObhqz2KZIDUA1yD0DG6pBVmy10eh0ZIXQImRuzocsI/N2XZ1GrLFwTS27In2i2jlpq1Q==
   /js-tokens/4.0.0:
-    dev: true
     resolution:
       integrity: sha512-RdJUflcE3cUzKiMqQgsCu06FPu9UdIJO0beYbPhHN4k6apgJtifcoCtT9bcxOpYBtpD2kCM6Sbzg4CausW/PKQ==
   /js-yaml/3.14.1:
@@ -5545,7 +5554,6 @@ packages:
   /loose-envify/1.4.0:
     dependencies:
       js-tokens: 4.0.0
-    dev: true
     hasBin: true
     resolution:
       integrity: sha512-lyuxPGr/Wfhrlem2CL/UcnUc1zcqKAImBDzukY7Y5F/yQiNdko6+fRLevlw1HgMySw7f611UIY408EtxRSoK3Q==
@@ -5857,7 +5865,6 @@ packages:
     resolution:
       integrity: sha512-fexhUFFPTGV8ybAtSIGbV6gOkSv8UtRbDBnAyLQw4QPKkgNlsH2ByPGtMUqdWkos6YCRmAqViwgZrJc/mRDzZQ==
   /object-assign/4.1.1:
-    dev: true
     engines:
       node: '>=0.10.0'
     resolution:
@@ -6321,7 +6328,6 @@ packages:
       loose-envify: 1.4.0
       object-assign: 4.1.1
       react-is: 16.13.1
-    dev: true
     resolution:
       integrity: sha512-8QQikdH7//R2vurIJSutZ1smHYTcLpRWEOlHnzcWHmBYrOGUysKwSsrC89BCiFj3CbrfJ/nXFdJepOVrY1GCHQ==
   /pseudomap/1.0.2:
@@ -6369,7 +6375,6 @@ packages:
     resolution:
       integrity: sha512-6eV150oJZ9U2t9svnsspTMrWNyHc6chX0KzDeAOXftRa8bNeOKTTfCJ7KorIwenkHd2xqVTBTCZd79yk/lx/Ug==
   /react-is/16.13.1:
-    dev: true
     resolution:
       integrity: sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==
   /react-is/17.0.1:
