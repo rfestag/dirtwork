@@ -1,0 +1,64 @@
+{
+  "name": "@dirtwork/react-dir",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./dist/index.js",
+  "scripts": {
+    "test": "eslint && cross-env NODE_ENV=test jest --passWithNoTests",
+    "build": "rollup -c",
+    "dev": "rollup -w -c",
+    "lint": "eslint --fix",
+    "preinstall": "npx only-allow pnpm",
+    "prettier": "prettier --write src"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
+  },
+  "dependencies": {
+    "prop-types": "^15.7.2"
+  },
+  "module": "./dist/index.es.js",
+  "browser": "./dist/index.umd.js",
+  "publishConfig": {
+    "main": "./dist/index.js",
+    "module": "./dist/index.es.js",
+    "browser": "./dist/index.umd.js"
+  },
+  "jest": {
+    "bail": true,
+    "collectCoverage": true,
+    "coverageReporters": [
+      "json",
+      "lcov",
+      "text",
+      "clover"
+    ],
+    "transform": {
+      "\\.js?$": [
+        "babel-jest",
+        {
+          "rootMode": "upward"
+        }
+      ]
+    }
+  },
+  "lint-staged": {
+    "src/**/*.{js,jsx}": [
+      "eslint --fix",
+      "prettier --write",
+      "cross-env NODE_ENV=test jest --bail --findRelatedTests --passWithNoTests"
+    ],
+    "src/**/*.{md,mdx}": [
+      "eslint --parser eslint-mdx --plugin mdx --fix",
+      "prettier --parser mdx --write"
+    ]
+  },
+  "peerDependencies": {
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
+  }
+}
