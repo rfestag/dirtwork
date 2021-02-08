@@ -5,7 +5,7 @@ import Tooltip from "@material-ui/core/Tooltip";
 import Typography from "@material-ui/core/Typography";
 import DotIcon from "@material-ui/icons/FiberManualRecord";
 import { makeStyles } from "@material-ui/core/styles";
-import ReactDir, { Dir } from "react-dir";
+import { Dir } from "@dirtwork/react-dir";
 import { useDebounce } from "../utils/utils";
 import { transpile } from "../utils/compile";
 import { CodeContext, createRequire } from "./CodeContext";
@@ -34,14 +34,6 @@ const useStyles = makeStyles(() => ({
     padding: 8,
   },
 }));
-
-const myLookup = {
-  react: React,
-  "react-dir": ReactDir,
-};
-function myRequire(props) {
-  return myLookup[props];
-}
 
 const lookup = {
   c: "text/x-csrc",

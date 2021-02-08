@@ -25,11 +25,11 @@
   },
   "dependencies": {
     "@babel/standalone": "^7.12.15",
+    "@dirtwork/react-dir": "workspace:^1.0.0",
     "babel-plugin-module-name-mapper": "^1.2.0",
     "babylon": "^6.18.0",
     "esprima": "^4.0.1",
-    "prop-types": "^15.7.2",
-    "react-dir": "^0.0.2"
+    "prop-types": "^15.7.2"
   },
   "module": "./dist/index.es.js",
   "browser": "./dist/index.umd.js",
