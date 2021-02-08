@@ -13,6 +13,7 @@ import Typography from "@material-ui/core/Typography";
 import Image from "next/image";
 import { makeStyles } from "@material-ui/core/styles";
 import Link from "./Link";
+import Code from "./Code";
 
 const useStyles = makeStyles((theme) => ({
   blockquote: {
@@ -179,6 +180,7 @@ const components = {
     const THead = (props) => <TableHead {...props} />;
     return memo(THead);
   })(),
+  code: Code,
   hr: Divider,
   img: (props) => {
     return props.width && props.height ? (

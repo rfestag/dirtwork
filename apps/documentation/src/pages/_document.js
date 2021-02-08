@@ -7,10 +7,10 @@ const prod = process.env.NODE_ENV === "production";
 const csp = [
   `base-uri 'none';`,
   `form-action 'self';`,
-  `default-src 'self';`,
+  //`default-src 'self';`,
   `script-src 'self' ${prod ? "" : "'unsafe-eval'"};`, // NextJS requires 'unsafe-eval' in dev (faster source maps)
   `style-src 'self' 'unsafe-inline' data:;`, // NextJS requires 'unsafe-inline'
-  `img-src 'self' https://image.shutterstock.com data: blob:;`,
+  //`img-src 'self' https://image.shutterstock.com data: blob:;`,
   `font-src 'self';`,
   `frame-src 'none';`,
   `media-src 'none';`,
@@ -42,7 +42,8 @@ class MyDocument extends Document {
     return (
       <Html>
         <Head>
-          <meta httpEquiv="Content-Security-Policy" content={csp} />
+          {/*<meta httpEquiv="Content-Security-Policy" content={csp} />*/}
+
           <meta name="referrer" content={referrer} />
         </Head>
         <body>

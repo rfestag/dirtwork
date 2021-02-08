@@ -1,6 +1,11 @@
 import React from "react";
 import Head from "next/head";
-//import { MyComponent } from "@Test/my-component"
+import Code from "../components/Code";
+
+let code = `
+const square = (x) => x*x
+square(3);
+`;
 
 export default function Home() {
   return (
@@ -10,9 +15,9 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <h1>Test</h1>
-        <p>Welcome to Next App</p>
-        {/*<MyComponent />*/}
+        <Code className="jsx" live={true}>
+          {code}
+        </Code>
       </main>
     </>
   );

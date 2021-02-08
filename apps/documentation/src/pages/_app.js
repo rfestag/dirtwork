@@ -9,6 +9,10 @@ import "fontsource-roboto/300.css";
 import "fontsource-roboto/400.css";
 import "fontsource-roboto/500.css";
 import "fontsource-roboto/700.css";
+import "codemirror/lib/codemirror.css";
+//import "../stylesheets/codemirror-overrides.css";
+import "codemirror/theme/material.css";
+import "codemirror/addon/scroll/simplescrollbars.css";
 
 function MyApp({ Component, pageProps }) {
   useEffect(() => {
