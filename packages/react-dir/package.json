@@ -38,7 +38,7 @@
       "clover"
     ],
     "transform": {
-      "\\.js?$": [
+      "\\.jsx?$": [
         "babel-jest",
         {
           "rootMode": "upward"

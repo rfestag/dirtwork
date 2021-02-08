@@ -118,17 +118,17 @@ importers:
       '@babel/standalone': 7.12.15
       babel-plugin-module-name-mapper: 1.2.0
       babylon: 6.18.0
-      codemirror: 5.59.2
       esprima: 4.0.1
       prop-types: 15.7.2
-      react-codemirror2: 7.2.1_codemirror@5.59.2+react@17.0.1
       react-dir: 0.0.2_react-dom@17.0.1+react@17.0.1
-      react-perfect-scrollbar: 1.5.8_react-dom@17.0.1+react@17.0.1
     devDependencies:
       '@material-ui/core': 4.11.3_react-dom@17.0.1+react@17.0.1
       '@material-ui/icons': 4.11.2_c640d2d0176bfcab1d99b942ffa7ebe7
+      codemirror: 5.59.2
       react: 17.0.1
+      react-codemirror2: 7.2.1_codemirror@5.59.2+react@17.0.1
       react-dom: 17.0.1_react@17.0.1
+      react-perfect-scrollbar: 1.5.8_react-dom@17.0.1+react@17.0.1
     specifiers:
       '@babel/standalone': ^7.12.15
       '@material-ui/core': ^4.11.3
@@ -3676,7 +3676,6 @@ packages:
     resolution:
       integrity: sha1-DQcLTQQ6W+ozovGkDi7bPZpMz3c=
   /codemirror/5.59.2:
-    dev: false
     resolution:
       integrity: sha512-/D5PcsKyzthtSy2NNKCyJi3b+htRkoKv3idswR/tR6UAvMNKA7SrmyZy6fOONJxSRs1JlUWEDAbxqfdArbK8iA==
   /collapse-white-space/1.0.6:
@@ -7877,7 +7876,6 @@ packages:
     resolution:
       integrity: sha512-4Ejy1OPxi9f2tt1rRV7Go7zmfDQ+ZectEQz3VGUQhgq62HtIRPDyG/JtnwIxs6x3uNMwo2V7q1fMvKjb+Tnpqg==
   /perfect-scrollbar/1.5.0:
-    dev: false
     resolution:
       integrity: sha512-NrNHJn5mUGupSiheBTy6x+6SXCFbLlm8fVZh9moIzw/LgqElN5q4ncR4pbCBCYuCJ8Kcl9mYM0NgDxvW+b4LxA==
   /performance-now/2.1.0:
@@ -8218,7 +8216,7 @@ packages:
     dependencies:
       codemirror: 5.59.2
       react: 17.0.1
-    dev: false
+    dev: true
     peerDependencies:
       codemirror: 5.x
       react: '>=15.5 <=16.x'
@@ -8268,7 +8266,7 @@ packages:
       prop-types: 15.7.2
       react: 17.0.1
       react-dom: 17.0.1_react@17.0.1
-    dev: false
+    dev: true
     peerDependencies:
       react: '>=16.3.3'
       react-dom: '>=16.3.3'
