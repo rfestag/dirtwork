@@ -7,7 +7,7 @@
     "test": "pnpm run --parallel --stream test",
     "release": "echo Boom",
     "bootstrap": "pnpm recursive install",
-    "build": "pnpm run --parallel --stream build",
+    "build": "pnpm run -r --stream build",
     "dev": "pnpm run --parallel --stream dev",
     "lint": "pnpm run --parallel --stream lint",
     "preinstall": "npx only-allow pnpm",
