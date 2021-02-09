@@ -12,7 +12,6 @@
     "lint": "pnpm run --parallel --stream lint",
     "preinstall": "npx only-allow pnpm",
     "prettier": "pnpm run --parallel --stream prettier",
-    "publish": "pnpm recursive publish",
     "start": "pnpm run --parallel --stream start"
   },
   "keywords": [],
